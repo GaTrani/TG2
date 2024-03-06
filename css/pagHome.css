@@ -1,0 +1,53 @@
+:root{
+    --azul1: #4dc9c2;
+    --azul2: #149990;
+    --azul3: #149990;
+    --azul4: #008285;
+  }
+  
+.conteudoHome{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    margin: 0px;
+    padding: 10px;
+    left: 200px;
+    top: 35px;
+    height: 100vh;
+    width: calc(100vw - 201px);
+}
+.conteudoBtn{
+    border: 2px solid var(--azul1);
+    height: 160px;
+    width: calc(100vw - 225px);
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.253);
+}
+.btnNovo{
+    background-color: var(--azul1);
+    position: relative;
+    left: 50px;
+    top: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.253);    
+  }
+.btnNovo:hover{
+    background-color: var(--azul2);
+}
+.conteudoResumo{
+    display: flex;
+    border: 2px solid var(--azul1);
+    margin-top: 10px;
+    height: calc(100vh - 240px);
+    width: calc(100vw - 225px);
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.253);
+}
+.conteudoProximosPagamentos{
+    border: 2px solid var(--azul1);
+    margin-top: 10px;
+    margin-left: 10px;
+    height: calc(100vh - 280px);
+    width: calc(50vw - 133px);
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.253);
+}

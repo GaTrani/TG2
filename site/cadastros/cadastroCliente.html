@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Cliente</title>
+    
+    <link rel="stylesheet" href="../../css/barras-menus.css">
+    <link rel="stylesheet" href="../../css/pagCadastroCliente.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+    
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+</head>
+<body>       
+    <div class="barraSuperior"></div>        
+    <iframe src="../../menu.html" frameborder="0"></iframe>
+
+    <div class="conteudoCadastroCliente">
+      <form action="#">
+        <p><label for="entradaNomeCliente">Nome</label>
+          <input type="text" id="entradaNomeCliente">
+        </p>
+        <div>
+          <p><label for="entradaCEP">CEP</label>
+            <input type="text" id="entradaCEP">
+          </p>
+          <p><label for="entradaEndereco">Endereço</label>
+            <input type="text" id="entradaEndereco">
+          </p>
+        </div>
+        
+        <p><label for="entradaTelefone">Telefone</label>
+          <input type="tel" id="entradaTelefone">
+        </p>
+        <p><label for="entradaVeiculo" class="entradaVeiculo">Veículo</label>
+          <input type="text" id="entradaMarca" placeholder="Marca">
+          <br><br>
+          <input type="text" id="entradaModelo" placeholder="Modelo">
+        </p>
+        <div class="botaoSalvarCliente">
+          <button class="button">SALVAR</button>
+        </div>          
+      </form>
+    </div>
+
+  <script type="text/javascript" src="../../scripts/scriptMenu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+:root{
+  --azul1: #4dc9c2;
+  --azul2: #149990;
+  --azul3: #149990;
+  --azul4: #008285;
+}
+
+body{
+    margin: 0px;
+    overflow: hidden;
+}
+.tela{
+    width: 100vw;
+    height: 100vh;
+    position: relative;   
+    margin: 0px; 
+}
+.conteudoGeral{
+  background-color: rgb(204, 120, 41);
+  position: absolute;
+  margin: 0px;
+  padding: 10px;
+  left: 200px;
+  top: 35px;
+  height: 100vh;
+  width: calc(100vw - 201px);
+}
+iframe{
+  width: 200px;
+  height: 100vh;
+  position: absolute;
+  border: none;
+}
+.barraCanto{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+    height: 35px;
+    width: 200px;
+    background-color: var(--azul1);
+    color: var(--azul3);
+    display: flex;
+    justify-content: center;
+}
+.barraSuperior{
+    position: absolute ;
+    margin: 0px;
+    padding: 0px;
+    height: 35px;
+    width: calc(100vw - 200px);
+    left: 200px;
+    background-color: var(--azul3);
+}
+.barraLateral{
+    position: absolute;
+    top: 35px;
+    height: 100%;
+    width: 200px;
+    margin: 0px;    
+    background-color: var(--azul4);
+}
+
+.side-bar{
+    background: var(--azul4);
+    backdrop-filter:blur(15px);
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top:35px;
+    left: -100%;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+  }
+  
+  .side-bar.active{
+    left: 0;
+  }
+  
+  .side-bar .menu{
+    width: 100%;
+    margin-top: 80px;
+  }
+  
+  .side-bar .menu .item{
+    position:relative;
+    cursor:pointer;
+  }
+  
+  .side-bar .menu .item .sub-menu a{
+    padding-left: 20px; /*80*/
+  }
+
+  .side-bar .menu .item a{
+    color: rgb(0, 0, 0);
+    font-size: 16px; /*16*/
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px; /*5 30*/
+    line-height: 30px; /*60 se alterar aqui deve alterar margin no ".side-bar .menu .item a .dropdown" */
+  }
+  
+  .side-bar .menu .item a:hover{
+    background: var(--azul3);
+    transition: 0.3s ease;  
+  }
+  
+  .side-bar .menu .item i{
+    margin-right: 15px; /*15*/
+  }
+  
+  .side-bar .menu .item a .dropdown{  
+    position: absolute;
+    right:0;
+    margin: 10px;
+    transition: 0.3s ease;
+  }
+  
+  .side-bar .menu .item .sub-menu{
+    background: var(--azul1);
+    display:none;
+  } 
+  
+  .rotate{
+    transform: rotate(90deg);
+  }
+  
+  .close-btn{
+    position: absolute;
+    color: gray;
+    font-size: 20px;
+    right: 0;
+    margin: 25px;
+    cursor: pointer;
+  }
+  .menu-btn{
+    position: absolute;
+    color: gray;
+    font-size: 20px;
+    margin: 25px;
+    cursor:pointer;
+  }

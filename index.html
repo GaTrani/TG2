@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TG</title>
+    <link rel="stylesheet" href="css/pagLogin.css">
+    
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+</head>
+<body>
+    <div class="tela">
+        <div class="box">
+            <div class="botoesLoginCriar">
+                <div class="botoes">
+                    <button class="botaol" id="botaol">Login</button>
+                    <button class="botaoc" id="botaoc">Criar Conta</button>
+                </div>                
+            </div>   
+            <div class="conteudoBox">
+                <form action="BD/validarUsuario.php" id="formLogin" method="post">
+                    
+                        <p><label for="entradaLog">login</label>
+                            <input type="text" id="entradaLog" name="entradaLog">
+                        </p>
+                        <p><label for="entradaPass">senha</label>
+                            <input type="password" id="entradaPass" name="entradaPass">
+                        </p>
+                        <p> <i>esqueceu a senha?</i> </p>
+                        <br><br>
+                        
+                        <div class="botaoEntrar">
+                            <button class="button" type="submit">ENTRAR</button>
+                        </div>
+                        <!--
+                        <div class="botaoEntrar">
+                            <button class="button" type="submit" onclick="validarUsuario(); return false">ENTRAR</button>
+                        </div>
+                        -->                        
+                             
+                </form>
+                <form action="BD/criarConta.php" id="formCriarConta" method="post">
+                    
+                        <p><label for="criarUsuario">Usuario</label>
+                            <input type="text" placeholder="insira seu usuario" id="criarUsuario" name="nomeUsuario">
+                        </p>
+                        <p><label for="entradaEmail">Email</label>
+                            <input type="email" placeholder="insira seu email" id="entradaEmail" name="nomeEmail">
+                        </p>
+                        <p><label for="entradaSenha">Senha</label>
+                            <input type="password" placeholder="insira sua senha" id="entradaSenha" name="nomeSenha">
+                        </p>
+                        <p><label for="entradaRepetirSenha">Senha</label>
+                            <input type="password" placeholder="repita sua senha" id="entradaRepetirSenha">
+                        </p>
+                        <br><br>
+                        
+                        <div class="botaoEntrar">
+                            <button class="button" id="btnCriarConta" >CRIAR CONTA</button>
+                        </div>                    
+                        
+                </form>
+
+            </div>                
+              
+        </div>      
+    </div>
+    <script src="scripts/scriptLogin.js"></script>
+    <script src="scripts/validar.js"></script>
+    <script src="scripts/jquery.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+:root{
+    --azul1: #4dc9c2;
+    --azul2: #149990;
+    --azul3: #149990;
+    --azul4: #008285;
+  }
+.conteudoCadastroCliente{
+    background-color: var(--azul1);
+    position: absolute;
+    margin: 0px;
+    padding: 10px;
+    left: 200px;
+    top: 35px;
+    height: 100vh;
+    width: calc(100vw - 200px);
+}
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+  
+input[type="text"]{
+    width: calc(100vw - 240px);
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+input[type="tel"]{
+    width: 250px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#entradaMarca, #entradaModelo, #entradaCEP{
+    width: 250px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.botaoSalvarCliente{
+    float: right;
+    margin-right: 30px;
+}
+  

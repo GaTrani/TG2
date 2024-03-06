@@ -1,0 +1,91 @@
+body{
+    margin: 0px;
+}
+.tela{
+    width: 100vw;
+    height: 100vh;
+    position: relative;    
+}
+.box {    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    /*background-color: rgb(90, 168, 168);*/
+    box-shadow: 2px 2px 2px 2px rgba(90, 168, 168, 0.507);
+    height: 370px;
+    width: 250px; 
+    border-radius: 16px;  
+    padding: 15px;
+    border: 2px solid rgb(90, 168, 168);    
+}
+.conteudoBox{
+    /* background-color: rgb(151, 212, 212); rgb(151, 212, 212 */
+    border: 1px solid rgb(90, 168, 168);
+    padding: 20px;
+    border-radius: 14px;  
+    height: 300px;
+    width: 170px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    overflow: hidden;    
+}
+.botoesLoginCriar{
+    position: absolute;
+    top: -40px;
+    width: 250px;
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgb(106, 192, 192);    
+}
+.botoes{
+    position: absolute;
+    width: 180px;
+    left: 50%;
+    transform: translate(-50%);      
+}
+.botaol, .botaoc{
+    height: 40px;
+    width: 85px;
+    background-color: rgb(106, 192, 192);
+    border: none;
+    padding: none;    
+}
+.botaoc:hover, .botaol:hover{
+    background-color: rgb(90, 168, 168);
+    padding: none;
+}
+.botaoc:focus, .botaol:focus{
+    background-color: rgb(90, 168, 168); 
+}
+.entrada{
+    height: 40px;
+    width: 20px;
+}
+.botaoEntrar{   
+    align-self: self-end;
+    border: 0px;    
+}
+.button{
+    position: absolute;
+    left: 50%;    
+    transform: translate(-50%, -50%);
+}
+.button:hover{
+    background-color: rgb(9, 100, 100);
+}
+#formLogin{
+    position: absolute;
+    left: 15px;
+}
+#formCriarConta{
+    position: absolute;
+    left: 250px;
+}
+#btnCriarConta{
+    width: 60%;
+}
